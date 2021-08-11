@@ -1,0 +1,119 @@
+.coupon {
+	padding-bottom: 20px;
+}
+.coupon-available {
+	margin-top: 10px;
+	.coupon-available-tips {
+		height: 38px;
+		line-height: 38px;
+		background: #f6f6f6;
+		color: #999;
+		font-size: 14px;
+		padding: 0 16px;
+	}
+	.coupon-available-apply {
+		display: flex;
+		margin-top: 20px;
+		padding: 0 16px;
+		/deep/ .van-field {
+			padding: 7px 16px;
+			height: 40px;
+			border: 1px solid #d1d1d1;
+		}
+		/deep/ .van-button {
+			margin-left: 10px;
+			padding: 0 38px;
+		}
+	}
+}
+.coupon-list {
+	margin: 20px 16px 0;
+	font-size: 14px;
+	color: #e84646;
+	.coupon-list-bj {
+		width: 100%;
+		height: 15px;
+		background: url('../../assets/images/coupon.png') repeat-x left top;
+	}
+	.coupon-list-item {
+		display: flex;
+		background: #fdecec;
+	}
+	.coupon-checkbox {
+		display: flex;
+		align-items: center;
+		margin-left: 30px;
+	}
+	.coupon-item {
+		width: 100%;
+		margin: 0 20px;
+		min-height: 150px;
+		.coupon-title {
+			font-size: 20px;
+			margin-top: 20px;
+		}
+		.coupon-content {
+			line-height: 20px;
+		}
+		.coupon-data {
+			color: #666;
+			font-size: 12px;
+			margin-top: 16px;
+			span {
+				display: block;
+				margin-top: 4px;
+			}
+			padding-bottom: 10px;
+			.coupon-showAll {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				span {
+					width: 260px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					display: -webkit-box;
+					-webkit-line-clamp: 1;
+					-webkit-box-orient: vertical;
+				}
+
+				.show-all {
+					height: auto;
+					display: block;
+					// word-break: normal;
+					word-wrap: break-word;
+					word-break: break-all;
+				}
+				i {
+					margin-top: 4px;
+					font-size: 10px;
+					align-self: flex-end;
+				}
+			}
+		}
+	}
+	/deep/ .van-icon {
+		border-color: #e84646;
+	}
+	/deep/ .van-checkbox__icon--checked .van-icon {
+		background: #e84646;
+	}
+}
+.coupon-list-stale {
+	color: #999;
+	.coupon-item .coupon-data span {
+		color: #999;
+	}
+	/deep/ .van-icon {
+		border-color: #999;
+	}
+	/deep/ .van-checkbox__icon--checked .van-icon {
+		background: #999;
+	}
+	.coupon-list-item {
+		background: #e9e9e9;
+	}
+	.coupon-list-bj {
+		background: url('../../assets/images/coupon_used.png') repeat-x left top;
+	}
+}
